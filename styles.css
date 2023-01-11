@@ -1,0 +1,525 @@
+/*Definindo fonte padrão dos textos do site e zerando margem*/
+*{
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Cor de fundo do Header, borda inferior branca e especificando a largura*/
+header {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid white ;
+
+    width: 100%;
+}
+
+/*Estiçização de Esppaçamento da barra de navegação*/
+nav {
+    display: flex; 
+    justify-content:space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*Largura do Logo*/
+.div-nav-esquerdo img {
+    width: 6rem;
+    padding: 15px;
+}
+
+/*Espaçamento entre topicos de navegação*/
+.div-nav-direito ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Remoção dos indicadores não ordenado dos LI, espaçamento entre os mesmos e alteração do tamanho*/
+.div-nav-direito li {
+    list-style:none;
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 20px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+/*Tirando o grifado dos links e mudando a cor*/
+.div-nav-direito a {
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* dando cor ao topico do menu selecionado */
+.div-nav-direito a:hover{
+    color:blueviolet;
+}
+/*Removendo o Icone de navegação do enquadramento para Desktop*/
+.barra-de-navegacao{
+    display: none;   
+}
+
+/*Configurando tela para mobile, até 630px*/
+@media (max-width: 630px)
+  {
+
+/*Colocando de volta o Icone de navegação no enquadramento Mobile*/
+    .barra-de-navegacao{
+        display:inherit; 
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+    }
+
+/*Removendo os topicos de navegação do enquadramento para mobile*/
+    .div-nav-direito {
+        display: none;
+    }
+
+    .container-2-foto {
+        display: none;
+    }
+  }
+/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO HEADER-----------------------------------------*/
+
+
+
+/*Defindo cor da letra e do fundo do corpo do site*/
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/*dando margem ao primeiro container*/
+.container-1 {
+    padding: 8px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+/*dando espaçamento no texto principal do container 1*/
+.div-container-1-principal  {
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+/*dando espaçamento em baixo do titulo do texto principal do container 1*/
+.div-container-1-principal h1 {
+    padding-bottom: 1rem;
+}
+
+/*Alterando o tamanho e a cor da tag H1 - nome Gabriel*/
+.gabriel {
+    color: #00E6FF;
+    font-size: 35px;
+}
+
+/*dando espaçamento em cima do titulo do texto Secundario do container 1*/
+.div-container-1-secundario {
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+}
+
+/*Definindo a largura das imagens e dando espaçamento embaixo delas*/
+.div-container-1-secundario img {
+    width: 8rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+/*Centralizando as divs*/
+.div-container-1-secundario div {
+    text-align: center;
+}
+
+/*Zerando o preenchimento e dando margem inferior no texto gabriel do container principal*/
+.div-container-1-principal .gabriel {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+
+/*Definindo largura do titulo gabriel, deixando todo o texto na mesma linha sem quebra e colocando estilização
+para o nome sumir antes de passar o ponteiro*/
+.gabriel {
+    width: 8em;
+    border-right: 2px solid white;
+    padding-bottom: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*Fazendo animação para o ponteiro percorrer o espaço fazendo aparecer o nome*/
+.typing-animation {
+    animation: blinkCursor 1000ms infinite normal, typingg 2s steps(90) 1s normal both;
+}
+
+/*Dando a animação que faz o ponteiro ficar piscando*/
+@keyframes blinkCursor {
+    from {
+        border-right-color: white;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/*Conplemento da animação que faz o ponteiro percorrer*/
+@keyframes typingg {
+    from {
+        width: 0;
+    }
+    to {
+        width: 8em;
+    }
+}
+
+
+/* ---------------------------------- */
+
+/*Fazendo textos que trocam ficar na mesma posição que o texto desenvolvedor*/
+.container-desenvolvedor{
+    display: inline-flex;
+}
+
+/*Dando margem ao texto desenvolvedor para ficar na mesma linha que os textos que trocam*/
+.desenvolvedor-estatico {
+    margin-top: 28px;
+}
+
+/*dando espaçamento entre as divs e aplicando a estilização para os os texto desapareçerem */
+.container-desenvolvedor .dinamico {
+    padding-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+     
+}
+
+/*Dando cor aos textos que mudam, tirando o indicadores dos textos, alterando o tamanho da fonte e dando
+a animação de ficar trocando de texto*/
+.dinamico li {
+    color:blueviolet;
+    list-style: none;
+    font-size: 2em;
+    font-weight: 500;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite normal;
+}
+
+/*Complemento da animação de troca de textos*/
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dinamico li span {
+    position: relative;
+}
+/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 1-----------------------------------------*/
+
+
+
+
+/*colocando cor no container 2 e dando espaçamento inferior*/
+.container-2 {
+    background-color: rgb(20, 19, 19);
+    padding-bottom: 10rem;
+}
+
+/*Centralizando o titulo do container 2 e dando espaçamento em baixo*/
+.container-2 h1{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+/*Formatação do texto e epaçamento ao redor do texto*/
+.container-2 p {
+    font-size: 20px;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    text-align: justify;
+}
+/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 2-----------------------------------------*/
+
+
+
+
+/*Dando espaçamento na parte de cima do container 3*/
+.container-3 {
+    padding-top: 2rem;
+}
+
+/*Formatação do texto e epaçamento ao redor do texto*/
+.container-3 h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*Centralização das imagens e espaçamento*/
+.container-3 div {
+    padding: 2rem;
+    text-align: center;
+}
+
+/*Definindo a largura das imagens*/
+.container-3 img {
+    width: 5rem;
+}
+/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 3-----------------------------------------*/
+
+
+
+
+/*Centralizando e dando espaço no container 4*/
+.container-4  {
+    text-align: center;
+    margin-top: 5rem;
+    background-color: rgb(20, 19, 19);
+}
+
+/*Dando espaçamento em baixo do titulo*/
+.container-4 h1  {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+/*Criando borda solida nas divs, dando o tamanho da largura e espaçamento nas bordas*/
+.container-4 div {
+    border: 1px solid rgb(255, 255, 255);
+    width: 17rem;
+    height: 10rem;
+    display:inline-block;
+    margin-bottom: 2rem;
+}
+/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 4-----------------------------------------*/
+
+
+
+
+/*Centraliznado e dando margem no titulo do container 5*/
+.container-5 h1 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/*redefinindo a largura da imagem e dando espaçamento na margin de baixo*/
+.container-5 img {
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+/*centralizando a imagem*/
+.container-5 div {
+    text-align: center;
+}
+/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 5-----------------------------------------*/
+
+
+
+
+/*Defindo a cor de fundo do footer*/
+footer {
+    background-color: black;
+    border-top: 1px solid white;
+}
+
+/*dando tamanho a fonte e definindo a cor de fundo do texto*/
+footer h2 {
+    font-size: 20px;
+    background-color: black;
+}
+
+/*dando espaçamento na laterais do texto*/
+.div-footer {
+    padding: 10px;
+}
+/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 5-----------------------------------------*/
+
+/* Botão flutuante para subir ao topo da pagina */
+.botao-subir {
+    background-color: rgb(197, 21, 21);
+    color: white;
+    width: 3rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*
+                 /*Daqui para baixo fica as Estilizações para versão Desktop*/
+
+
+
+@media (min-width: 630px)
+ {
+/*Dando tamanho padrão a todas as tags de h1 de titulos*/
+    * h1{
+        font-size: 28px;
+    }
+
+/*Dando espaçamento lateral no header*/
+    nav {
+        padding-left: 2rem;
+        padding-right: 6rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+
+/* Deixando as duas maiores divs do container 1 na mesma linha */
+    .container-1 {
+        display: flex;
+    }     
+
+/*Dando um maior espaçamento entre a parte principal e secundario do container 1*/
+    .div-container-1-principal {
+        padding-left: 2rem;
+        padding-top: 1rem;
+        margin-top: 7rem;
+        margin-left: 5rem
+    }
+
+/*Dando tamanho personalizado a div desenvolvedor*/
+    .desenvolvedor-estatico {
+        font-size: 1.8em;
+    }
+
+/*Dando tamanho para o titulo de nome Gabriel*/
+    .gabriel {
+        font-size: 3rem;
+    }
+
+/*Dando um maior espaçamento entre a parte principal e secundario do container 1*/
+    .div-container-1-secundario  {
+        margin-left: -2rem;
+        margin-bottom: 14rem;
+        margin-top: 0rem; 
+    }
+
+/*Deixando as div do container 1 secundario uma do lado da outra com espaçamento*/
+    .div-container-1-secundario div {
+        display: inline;
+        padding: 2rem;
+        text-align: start;   
+    }
+
+/*alterando o tamanho para os links do perfil proficional ficar mais alto*/
+    .div-container-1-secundario img {
+        width: 10rem;
+    }
+
+    .container-1-lado-esquerdo img {
+        width: 35rem;
+        padding-left: 5rem;
+        padding-top: 3rem;
+    }
+/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 1 PARA DESKTOP--------------------------------------------*/
+
+
+
+/*Dando espaçamento inferior no container 2*/
+    .container-2 h1 {
+        text-align: center;
+        margin-bottom: 5rem;
+        padding-top: 2rem;
+    }
+
+/* centralizando o texto do container 2 e alguns espaçamentos */
+    .container-2  {
+        text-align: center;
+        padding: 1.5rem;
+        padding-bottom: 5rem;
+        padding-top: 4rem;
+    }
+
+/* Definindo a largura da div do container 2 */
+    .container-2 div {
+        width: 100%;
+        display: inline-flex;
+    }
+
+/*alterando o tamanho do paragrafo do container 2 - sobre mim*/
+    .container-2 p {
+        font-size: 19px;
+        padding: 0;
+        margin-right: 1rem;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+/* Definindo a altura da imagem do container 2, centralizando o o texto e dando espaçamento  */
+    .container-2-foto {
+        height: 30rem;
+        margin-left: 1rem;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+    }
+/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 2 PARA DESKTOP--------------------------------------------*/
+
+
+
+
+/*Centralizando os itens do container 3 e dando espaçamento inferior*/
+    .container-3  {
+    text-align: center;
+    padding-bottom: 20rem;
+    padding-top: 8rem;
+
+    }
+
+/* Dando espaçamento inferior na div do container 3 */
+    .container-3 div  {
+        padding-bottom: 1rem;
+    }
+
+/*Deixando as divs do container 3 alinhados na mesma linha*/
+    .logo-habilidade {
+        display: inline;
+        padding: 0;
+    }
+
+/*Dando espaçamento do titulo do container 3*/
+    .container-3 h1 {
+        padding-bottom: 3rem;
+    }
+
+/* Colocando uma linha no container 3 para separar os icones do texto, dando largura no container e centralizando os itens */
+    .div-container-3 {
+        border-bottom: 1px solid white;
+        width: 85%;
+        display: inline-block;
+        justify-content: center;
+    }
+/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 3 PARA DESKTOP--------------------------------------------*/
+
+
+
+
+/*Dando espaçamento inferior no container 4*/
+    .container-4  {
+        padding-bottom: 10rem;
+        margin: 0;
+        padding-top: 5rem;
+    }
+
+/*Dando margem entre as divs do container 4*/  
+    .container-4 div {
+        margin: 2rem;
+        margin-bottom: 2rem;
+    }
+/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 4 PARA DESKTOP--------------------------------------------*/
+
+
+
+/*Dando espaçamento inferior no container 5*/
+    .container-5 {
+        padding-bottom: 19rem;
+        padding-top: 6rem;
+    }
+ }

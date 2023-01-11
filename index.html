@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Oliveira</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<!--Cabeçalho-->
+<header>
+<!--Navegação do portifolio-->
+    <nav>
+<!--Div contendo o Logo-->    
+        <div class="div-nav-esquerdo">
+            <a href="/"><img src="img/logo-gofs.png" alt="Logo"></a>
+        </div>
+<!--Div contendo os topicos da pagina-->
+        <div class="div-nav-direito">
+            <ul>
+                <a href="#container-2"><li>Sobre mim</li></a>
+                <a href="#container-3"><li>Habilidades</li></a>
+                <a href="#container-4"><li>Projetos</li></a>
+                <a href="#container-5"><li>Nivelamento</li></a>
+            </ul>
+        </div>
+<!--Icone de Navegação-->
+        <div class="barra-de-navegacao"><img src="img/barra-de-navegação.png" 
+             alt="Icone de Navegação" width="40px">
+        </div>
+    </nav>
+</header>
+<body>
+<!--Primeiro Container - minhas informações principais-->
+    <section class="container-1" id="container-1">
+        <div class="div-container-1-principal">
+            <h1>OLÁ, EU SOU</h1>
+            <h1 class="gabriel typing-animation">GABRIEL SANTOS</h1>
+            <div class="container-desenvolvedor">
+                <div class="desenvolvedor-estatico">DESENVOLVEDOR</div>
+                <ul class="dinamico">
+                    <li><span>FRONT-END</span></li>
+                    <li><span>BACK-END</span></li>
+                    <li><span>WEB FULL STACK</span></li>
+                </ul>
+            </div>
+
+            <!--Primeiro Container - Segunda parte - Meus Perfil Proficionais-->
+        <div class="div-container-1-secundario" >
+            <!--Perfil do Linkedin-->
+                        <div class="div-container-1-secundario-linkedin"><a 
+                            href="https://www.linkedin.com/in/gabriel-oliveira-7673b6203/">
+                            <img src="img/linkedin.png" alt="Linkedin"></a>
+                        </div>
+            <!--Perfil do GitHub-->
+                        <div class="div-container-1-secundario-github"><a href="https://github.com/GabriellShi">
+                            <img src="img/github.png" alt="GitHub"></a>
+                        </div>
+                    </div>
+                    
+        </div>
+
+        <div class="container-1-lado-esquerdo"><img src="/img/imagem-container-1.png" alt="imagem-tec"></div>
+    </section>
+<!--Segundo Container - Sobre mim-->
+    <section class="container-2" id="container-2" data-aos="fade-up">
+        <h1 class="sobre-mim-ti">Sobre Mim</h1>
+        <div class="container-2-conjunto">
+            <div class="container-2-sobre" data-aos="fade-right">
+                <p> <strong>Gabriel Oliveira Ferreira Santos</strong> <br> <br>
+                    Espinho, Portugal <br> <br>
+                    Tenho 23 ano, sou apaixonado por tecnologia, sempre tive duvida sobre o setor pois tudo me facina nessa
+                    area. <br>
+                    Tive meu primeiro contato com programação na metade de 2021 onde decidi entrar de cabeça em algo,  
+                    foi ai que procurei algumas videos aulas no Youtube e começei a me interresar por Programação, 
+                    em especifico desenvolvimento Web, então no final de 2021 entrei em um curso academico para me aprofundar
+                    mais, desde então venho desenvolvendo diversos projetos pessoais e até alguns Freelancer para poder ter
+                    uma base mais solida antes de ingressar no mercado de trabalho.  <br> <br>
+                    Agora em 2023 já finalizei meu curso e depois de ter adiquirido muita experiencia com meus projetos,
+                    Creio que estou pronto, e busco minha primeira oportunidade na area para um crescimento ainda maior.
+                </p>
+                </div>
+                <div class="container-2-foto" data-aos="fade-left"><img src="/img/foto.png" alt=""></div>
+        </div>
+    </section>
+<!--Terceiro Container - Minhas Habilidades-->
+    <section class="container-3" id="container-3" data-aos="fade-up" >
+        <h1>Habilidades Conhecidas</h1>
+<!--Logos das linguagens e das ferramentas conhecidas-->        
+        <div>
+            <div class="logo-habilidade">
+                <img src="/img/html.png" alt="Html">
+            </div>
+            <div class="logo-habilidade">
+                <img src="/img/css.png" alt="Css">
+            </div>
+            <div class="logo-habilidade">
+                <img src="/img/javascript.png" alt="JavaScript">
+            </div>
+            <div class="logo-habilidade">
+                <img src="/img/node-js.png" alt="Node.js">
+            </div>
+            <div class="logo-habilidade">
+                <img src="/img/react.png" alt="React">
+            </div>
+            <div class="logo-habilidade">
+                <img src="/img/mysql.png" alt="Mysql">
+            </div>
+        </div>
+        <div class="div-container-3"></div>
+    </section>
+<!--Quarto Container - Meus Projetos-->
+    <section class="container-4" id="container-4" data-aos="fade-up">
+        <h1>Projetos</h1>
+        <div>Projeto 1</div>
+        <div>Projeto 2</div>
+        <div>Projeto 3</div>
+        <div>Projeto 4</div>
+        <div>Projeto 5</div>
+        <div>Projeto 6</div>
+    </section>
+<!--Quinto Container - Meus Desenpenhos-->    
+    <section class="container-5" id="container-5" data-aos="fade-up">
+        <h1>Testes de desenpenhos <br> feitos na Coodesh.</h1>
+        <div><img src="/img/grafico.png" alt="Grafico" width="60rem"></div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init({
+        duration: 3000,
+       });
+    </script>
+
+<a class="botao-subir" href="#container-1">SUBA</a>
+</body>
+<!--Rodape da Pagina-->   
+<footer>
+    <div class="div-footer">
+         <div><h2><strong>Desenvolvido por:</strong> Gabriel Oliveira </h2></div>
+        <div> <h2><strong>E-mail de Contato:</strong> gabrieloliveirasantos196@gmail.com </h2></div>
+         <div><h2><strong>Telefone:</strong> 351 915 714 405</h2></div>
+    </div>
+</footer>
+
+
+</html>
+
