@@ -9,11 +9,10 @@
 header {
     background-color: rgb(0, 0, 0);
     border-bottom: 1px solid white ;
-
     width: 100%;
 }
 
-/*Estiçização de Esppaçamento da barra de navegação*/
+/*Estilização de Espaçamento da barra de navegação*/
 nav {
     display: flex; 
     justify-content:space-between;
@@ -77,6 +76,11 @@ nav {
     }
 
     .container-2-foto {
+        display: none;
+    }
+
+/* removendo o container 3 para desktop da area mobile  */
+    .container-3-desktop {
         display: none;
     }
   }
@@ -184,7 +188,8 @@ para o nome sumir antes de passar o ponteiro*/
 
 /*Dando margem ao texto desenvolvedor para ficar na mesma linha que os textos que trocam*/
 .desenvolvedor-estatico {
-    margin-top: 28px;
+    margin-top: 36px;
+    font-size: 25px;
 }
 
 /*dando espaçamento entre as divs e aplicando a estilização para os os texto desapareçerem */
@@ -218,6 +223,12 @@ a animação de ficar trocando de texto*/
 
 .dinamico li span {
     position: relative;
+    font-size: 1.5rem;
+}
+
+/* retirando a imagem do container 1 para versão mobile  */
+.container-1-lado-esquerdo {
+    display: none;
 }
 /*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 1-----------------------------------------*/
 
@@ -262,13 +273,17 @@ a animação de ficar trocando de texto*/
 
 /*Centralização das imagens e espaçamento*/
 .container-3 div {
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
 }
 
 /*Definindo a largura das imagens*/
 .container-3 img {
     width: 5rem;
+}
+
+.icones-habilidades img {
+    cursor: pointer;
 }
 /*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 3-----------------------------------------*/
 
@@ -349,6 +364,34 @@ footer h2 {
     border-radius: 5px;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------------------------------------------------------------------------------------*
@@ -491,11 +534,18 @@ footer h2 {
 
 /* Colocando uma linha no container 3 para separar os icones do texto, dando largura no container e centralizando os itens */
     .div-container-3 {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid  #00E6FF;;
         width: 85%;
         display: inline-block;
         justify-content: center;
     }
+
+/* removendo o container 3 para mobile da area desktop  */
+.container-3-Mobile {
+    display: none;
+}
+
+
 /*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 3 PARA DESKTOP--------------------------------------------*/
 
 

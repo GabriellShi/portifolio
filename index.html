@@ -7,6 +7,7 @@
     <title>Gabriel Oliveira</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="/scripts.js"></script>
 </head>
 <!--Cabeçalho-->
 <header>
@@ -31,6 +32,7 @@
         </div>
     </nav>
 </header>
+
 <body>
 <!--Primeiro Container - minhas informações principais-->
     <section class="container-1" id="container-1">
@@ -84,32 +86,130 @@
                 <div class="container-2-foto" data-aos="fade-left"><img src="/img/foto.png" alt=""></div>
         </div>
     </section>
-<!--Terceiro Container - Minhas Habilidades-->
+    
+<section class="container-3-desktop">
+    <!--Terceiro Container - Minhas Habilidades para Desktop-->
     <section class="container-3" id="container-3" data-aos="fade-up" >
         <h1>Habilidades Conhecidas</h1>
-<!--Logos das linguagens e das ferramentas conhecidas-->        
-        <div>
+        <div class="icones-habilidades">
             <div class="logo-habilidade">
-                <img src="/img/html.png" alt="Html">
+                <img src="/img/html.png" alt="Html" id="btn-html" data-nome="b1">
             </div>
+
             <div class="logo-habilidade">
-                <img src="/img/css.png" alt="Css">
+                <img src="/img/css.png" alt="Css" id="btn-css" data-nome="b2">
             </div>
-            <div class="logo-habilidade">
-                <img src="/img/javascript.png" alt="JavaScript">
+
+            <div class="logo-habilidade">   
+                <img src="/img/javascript.png" alt="javascript" id="btn-js" data-nome="b3">
             </div>
+
             <div class="logo-habilidade">
-                <img src="/img/node-js.png" alt="Node.js">
+                <img src="/img/node-js.png" alt="Node.js" id="btn-node" data-nome="b4">
             </div>
+
             <div class="logo-habilidade">
-                <img src="/img/react.png" alt="React">
+                <img src="/img/react.png" alt="React" id="btn-react" data-nome="b5">
             </div>
+
             <div class="logo-habilidade">
-                <img src="/img/mysql.png" alt="Mysql">
+                <img src="/img/mysql.png" alt="Mysql" id="btn-mysql" data-nome="b6">
             </div>
         </div>
+
+<!-- Inforamções sobre minhas habilidade para desktop -->
+<!-- linha de separação entre os icones e as informações  -->
         <div class="div-container-3"></div>
+        
+        <div class="inf-html" id="b1">HTML - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+             reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+              facere quo.
+        </div>
+        <div class="inf-css" id="b2">CSS - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+                reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+                 facere quo.
+        </div>
+        <div class="inf-java" id="b3">java - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+            reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+             facere quo.
+       </div>
+       <div class="inf-node" id="b4">node - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+               reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+                facere quo.
+       </div>
+       <div class="inf-react" id="b5">react - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+        reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+         facere quo.
+        </div>  
+        <div class="inf-mysql" id="b6">mysql - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+           reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+            facere quo.
+        </div>
     </section>
+</section>
+
+
+
+
+
+
+    <!--Terceiro Container - Minhas Habilidades para Mobile-->
+<section class="container-3-Mobile">
+
+<section class="container-3" id="container-3" data-aos="fade-up" >
+    <h1>Habilidades Conhecidas</h1>
+    <div class="icones-habilidades">
+        <div class="logo-habilidade">
+            <img src="/img/html.png" alt="Html" id="btn-html-mobile" data-nome="h1">
+            <div class="inf-css-mobile" id="h1">css - mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+                reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+                 facere quo.
+           </div>
+        </div>
+
+        <div class="logo-habilidade">
+            <img src="/img/css.png" alt="Css" id="btn-css-mobile" data-nome="h2">
+            <div class="inf-css-mobile" id="h2">css - mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+                reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+                 facere quo.
+           </div>
+        </div>
+
+        <div class="logo-habilidade">   
+            <img src="/img/javascript.png" alt="javascript" id="btn-js-mobile" data-nome="h3">
+            <div class="inf-js-mobile" id="h3">js - mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+                reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+                 facere quo.
+            </div>
+        </div>
+
+        <div class="logo-habilidade">
+            <img src="/img/node-js.png" alt="Node.js" id="btn-node-mobile" data-nome="h4">
+            <div class="inf-node-mobile" id="h4">node - mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+                reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+                 facere quo.
+            </div>
+        </div>
+
+        <div class="logo-habilidade">
+            <img src="/img/react.png" alt="React" id="btn-react-mobile" data-nome="h5">
+            <div class="inf-react-mobile" id="h5">react - mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+                reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+                 facere quo.
+            </div>
+        </div>
+
+        <div class="logo-habilidade">
+            <img src="/img/mysql.png" alt="Mysql" id="btn-mysql-mobile" data-nome="h6">
+            <div class="inf-mysql-mobile" id="h6">mysql - mobile - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
+                reiciendis similique provident ratione commodi quia autem, doloribus illum hic ipsam, sit minus dicta
+                 facere quo.
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
 <!--Quarto Container - Meus Projetos-->
     <section class="container-4" id="container-4" data-aos="fade-up">
         <h1>Projetos</h1>
@@ -144,6 +244,13 @@
     </div>
 </footer>
 
+<!-- Codigo que controla a movimentação (subida) dos elemento ao rolar  apagina  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init({
+    duration: 3000,
+   });
+</script>
 
 </html>
 
