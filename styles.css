@@ -38,7 +38,7 @@ nav {
     padding: 15px;
     margin-top: 5px;
     font-size: 20px;
-    text-transform: none;
+
     text-decoration: none;
 }
 
@@ -285,32 +285,133 @@ a animação de ficar trocando de texto*/
 .icones-habilidades img {
     cursor: pointer;
 }
+
+/* centralizando o segundo div do container 3 e dando cor ao mesmo  */
+.container-3 h2 {
+    display: flex;
+    justify-content: center;
+    color: #00E6FF;
+}
 /*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 3-----------------------------------------*/
 
 
-
-
-/*Centralizando e dando espaço no container 4*/
-.container-4  {
-    text-align: center;
-    margin-top: 5rem;
+.container-4 {
+    width: 100%;
+    height: auto;
     background-color: rgb(20, 19, 19);
+    flex-direction:row;
+    flex-flow: wrap;
 }
 
-/*Dando espaçamento em baixo do titulo*/
-.container-4 h1  {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+.container-4 h1 {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-/*Criando borda solida nas divs, dando o tamanho da largura e espaçamento nas bordas*/
-.container-4 div {
-    border: 1px solid rgb(255, 255, 255);
-    width: 17rem;
-    height: 10rem;
-    display:inline-block;
-    margin-bottom: 2rem;
+.img-imagemcenter img {
+    width: 18rem;
 }
+
+.img-imagemcenter  {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.projeto-div:hover {
+    background-color: #0000009d;
+    
+}
+
+.projeto-div {
+    background-color:transparent;
+    width: 18rem;
+    height: 12.3rem;
+    position: absolute;
+}
+
+.projetos {
+    margin: 1rem;
+}
+
+.projeto-div {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.projeto-div-menor {
+    width: 3.5rem;
+    padding: 0.3rem;
+    padding-bottom: 0.5rem;
+    height:0.8rem;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    margin: 0.2rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    
+}
+
+.projetos-h3 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.projetos-h3 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* definindo as cores e deixando a fonte mais larga dos botões de preview e codigo  */
+.menor3 {
+    background-color: #00E6FF;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* dando largura a div de habilidade javascript  */
+.menor4 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* tirando a linha de linkagem das tags a do botão de preview e codigo  */
+.btn-projetos a {
+    text-decoration: none;
+}
+
+/* Colocando um dos botões transparente  */
+.projeto-div-menor-2 {
+    display:none;
+    background-color: transparent;
+    border: 0;
+}
+
+.projeto-div-a1 div {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-4-pai {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-flow: wrap;
+
+}
+
+
+
+
 /*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 4-----------------------------------------*/
 
 
@@ -340,30 +441,59 @@ a animação de ficar trocando de texto*/
 
 /*Defindo a cor de fundo do footer*/
 footer {
-    background-color: black;
+    background-color: rgb(32, 32, 32);
     border-top: 1px solid white;
 }
 
 /*dando tamanho a fonte e definindo a cor de fundo do texto*/
 footer h2 {
     font-size: 20px;
-    background-color: black;
 }
 
-/*dando espaçamento na laterais do texto*/
+/* dando a responsividade ao mudar do mobile para o desktop  */
 .div-footer {
-    padding: 10px;
+    flex-direction:row;
+    flex-flow: wrap;
 }
-/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 5-----------------------------------------*/
 
-/* Botão flutuante para subir ao topo da pagina */
-.botao-subir {
-    background-color: rgb(197, 21, 21);
-    color: white;
-    width: 3rem;
-    border-radius: 5px;
-    text-align: center;
-}
+
+
+/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO FOOTER MOBILE-----------------------------------------*/
+
+/* Estilizando o Botão de Scroll para o topo da pagina  */
+.scrollTop {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+  }
+  
+  /* Estilizando quano ele ira aparacer  */
+  .scrollTop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Estilizando a largura da imagem e fazendo a rotação dela  */
+  .scrollTop img {
+    width: 50%;
+    transform: rotate(-90deg);
+  }
+  
 
 
 
@@ -549,27 +679,148 @@ footer h2 {
 /*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 3 PARA DESKTOP--------------------------------------------*/
 
 
+.container-4 {
+    width: 100%;
+    height: 35rem;
+    background-color: rgb(20, 19, 19);
+}
 
+.container-4 h1 {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 
-/*Dando espaçamento inferior no container 4*/
-    .container-4  {
-        padding-bottom: 10rem;
-        margin: 0;
-        padding-top: 5rem;
-    }
+.img-imagemcenter img {
+    width: 18rem;
+}
 
-/*Dando margem entre as divs do container 4*/  
-    .container-4 div {
-        margin: 2rem;
-        margin-bottom: 2rem;
-    }
-/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 4 PARA DESKTOP--------------------------------------------*/
+.img-imagemcenter  {
+    display: flex;
+}
 
+.projeto-div:hover {
+    background-color: #0000009d;
+    
+}
 
+.projeto-div {
+    background-color:transparent;
+    width: 18rem;
+    height: 12.3rem;
+    position: absolute;
+}
 
+.projetos {
+    margin: 1rem;
+}
+
+.projeto-div {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+.projeto-div-menor {
+    width: 3.5rem;
+    padding: 0.3rem;
+    padding-bottom: 0.5rem;
+    height:0.8rem;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    margin: 0.2rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.projetos-h3 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.projetos-h3 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* definindo as cores e deixando a fonte mais larga dos botões de preview e codigo  */
+.menor3 {
+    background-color: #00E6FF;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* dando largura a div de habilidade javascript  */
+.menor4 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* tirando a linha de linkagem das tags a do botão de preview e codigo  */
+.btn-projetos a {
+    text-decoration: none;
+}
+
+/* Colocando um dos botões transparente  */
+.projeto-div-menor-2 {
+    display:none;
+    background-color: transparent;
+    border: 0;
+}
+
+.projeto-div-a1 div {
+    display: flex;
+    justify-content: center;
+}
+
+.container-4-pai {
+    display: flex;
+    justify-content: center;
+
+}
 /*Dando espaçamento inferior no container 5*/
     .container-5 {
         padding-bottom: 19rem;
         padding-top: 6rem;
     }
  }
+
+    
+/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 4 PARA DESKTOP--------------------------------------------*/
+
+
+/* Centralizando as div do footer  */
+.div-footer {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+/* dando margem as div do footer  */
+.div-footer div {
+    margin: 1rem;
+}
+
+/* Definindo o tamanho da imagem da div desenvolvedor do footer  */
+.div-footer img {
+    width: 4rem;
+}
+
+/* Centralizando e deixando as divs uma ao lado da outra  */
+.desenvolvedor {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO FOOTER PARA DESKTOP--------------------------------------------*/

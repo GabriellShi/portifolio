@@ -1,4 +1,4 @@
-// aniamção do container 3 - fazendo os texto sumir e só aparecer ao ser selecionado 
+// --------------------aniamção do container 3 - fazendo os texto sumir e só aparecer ao ser selecionado---------------- 
 
 function mostrar(){
     for(var i=1;i<7;i++){
@@ -23,9 +23,8 @@ function mostrar(){
 
    window.addEventListener("load",inicia);
 
-/////// ------------------------------------------------------------------------------------------///////////- 
 
-// aniamção do container 3 - fazendo os texto sumir e só aparecer ao ser selecionado 
+//------------ aniamção do container 3 - fazendo os texto sumir e só aparecer ao ser selecionado (Mobile)-------------- 
 
 function mostrar2(){
     for(var i=1;i<7;i++){
@@ -49,3 +48,44 @@ function mostrar2(){
    }
 
    window.addEventListener("load",inicia2);
+
+
+//-------------------------- Definindo o Botão de Scroll para o topo da pagina ----------------------------------
+
+window.addEventListener('scroll', function() {
+    let scroll = this.document.querySelector('.scrollTop')
+        scroll.classList.toggle('active', window.scrollY > 450)
+})
+
+function backTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
+
+
+
+// Definindo a aparição das habilidades do container 4 ao passar o mouse 
+function aparecer(){
+    for(var i=1;i<3;i++){
+     document.getElementById("a"+i).hidden=true; //Oculta as imagens
+    }
+    var obj3=event.target.dataset.nome; //Captura todo o elemento
+    document.getElementById(obj3).hidden=false; //Oculta o elemento
+
+   }
+   
+   function inicia3(){
+    for(var i=1; i<3; i++){
+     document.getElementById("a"+i).hidden=true; //Oculta as imagens
+    }
+
+    document.getElementById("btn-imagemcenter").addEventListener("mouseover",aparecer);
+    document.getElementById("btn-whatss").addEventListener("mouseover",aparecer);
+
+
+    
+   }
+
+   window.addEventListener("load",inicia3);

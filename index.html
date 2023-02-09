@@ -7,7 +7,7 @@
     <title>Gabriel Oliveira</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script defer src="/scripts.js"></script>
+    <script defer src="/script.js"></script>
 </head>
 <!--Cabeçalho-->
 <header>
@@ -38,7 +38,7 @@
     <section class="container-1" id="container-1">
         <div class="div-container-1-principal">
             <h1>OLÁ, EU SOU</h1>
-            <h1 class="gabriel typing-animation">RABRIEL SANTOS</h1>
+            <h1 class="gabriel typing-animation">GABRIEL SANTOS</h1>
             <div class="container-desenvolvedor">
                 <div class="desenvolvedor-estatico">DESENVOLVEDOR</div>
                 <ul class="dinamico">
@@ -52,12 +52,12 @@
         <div class="div-container-1-secundario" >
             <!--Perfil do Linkedin-->
                         <div class="div-container-1-secundario-linkedin"><a 
-                            href="https://www.linkedin.com/in/gabriel-oliveira-7673b6203/">
+                            href="https://www.linkedin.com/in/gabriel-oliveira-7673b6203/" target="_blank">
                             <img src="img/linkedin.png" alt="Linkedin"></a>
                         </div>
             <!--Perfil do GitHub-->
-                        <div class="div-container-1-secundario-github"><a href="https://github.com/GabriellShi">
-                            <img src="img/github.png" alt="GitHub"></a>
+                        <div class="div-container-1-secundario-github"><a href="https://github.com/GabriellShi" target="_blank">
+                            <img src="img/github.png"  alt="GitHub"></a>
                         </div>
                     </div>
                     
@@ -88,9 +88,10 @@
     </section>
     
 <section class="container-3-desktop">
-    <!--Terceiro Container - Minhas Habilidades para Desktop-->
+<!--Terceiro Container - Minhas Habilidades para Desktop-->
     <section class="container-3" id="container-3" data-aos="fade-up" >
         <h1>Habilidades Conhecidas</h1>
+        <h2>CLIQUE NOS ICONES</h2>
         <div class="icones-habilidades">
             <div class="logo-habilidade">
                 <img src="/img/html.png" alt="Html" id="btn-html" data-nome="b1">
@@ -119,6 +120,7 @@
 
 <!-- Inforamções sobre minhas habilidade para desktop -->
 <!-- linha de separação entre os icones e as informações  -->
+
         <div class="div-container-3"></div>
         
         <div class="inf-html" id="b1">HTML - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam officia, deserunt enim accusantium
@@ -153,7 +155,7 @@
 
 
 
-    <!--Terceiro Container - Minhas Habilidades para Mobile-->
+<!--Terceiro Container - Minhas Habilidades para Mobile-->
 <section class="container-3-Mobile">
 
 <section class="container-3" id="container-3" data-aos="fade-up" >
@@ -211,19 +213,68 @@
 </section>
 
 <!--Quarto Container - Meus Projetos-->
-    <section class="container-4" id="container-4" data-aos="fade-up">
+     <section class="container-4" id="container-4" > <!--data-aos="fade-up" -->
         <h1>Projetos</h1>
-        <div>Projeto 1</div>
-        <div>Projeto 2</div>
-        <div>Projeto 3</div>
-        <div>Projeto 4</div>
-        <div>Projeto 5</div>
-        <div>Projeto 6</div>
+        <div class="container-4-pai">
+            <div class="img-imagemcenter">
+                <div class="projetos" > 
+                    <div class="projeto-div" id="btn-imagemcenter" data-nome="a1">
+                        <div class="projeto-div-a1" id="a1">
+                            <h3 class="projetos-h3">Tecnologias Usadas</h3>
+                            <div>
+                                <div class="projeto-div-menor">HTML</div>
+                                <div class="projeto-div-menor">CSS</div>
+                            </div>
+                            <div class="btn-projetos">
+                                <a href="http://imagemcenter.com.br/">
+                                    <div class="projeto-div-menor menor3">PREVIEW</div>
+                                </a>
+                                <a href="https://github.com/GabriellShi/imagem-center">
+                                    <div class="projeto-div-menor menor3">CODIGO</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="/img/img-projeto-imagemcenter.jpg" alt="Projeto-ImagemCenter">
+               </div>
+            </div>
+    
+            <div class="img-imagemcenter">
+                <div class="projetos" > 
+                    <div class="projeto-div" id="btn-whatss" data-nome="a2">
+                        <div class="projeto-div-a1" id="a2">
+                            <h3 class="projetos-h3">Tecnologias Usadas</h3>
+                            <div>
+                                <div class="projeto-div-menor">HTML</div>
+                                <div class="projeto-div-menor">CSS</div>
+                                <div class="projeto-div-menor menor4">JAVASCRIPT</div>
+                            </div>
+                            <div class="btn-projetos">
+                                <a href="http://imagemcenter.com.br/">
+                                    <div class="projeto-div-menor menor3">PREVIEW</div>
+                                </a>
+                                <a href="https://github.com/GabriellShi/imagem-center">
+                                    <div class="projeto-div-menor menor3">CODIGO</div>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <img src="/img/img-projeto-whatssrc.png" alt="Projeto-ImagemCenter">
+               </div>
+            </div>
+        </div>
     </section>
 <!--Quinto Container - Meus Desenpenhos-->    
     <section class="container-5" id="container-5" data-aos="fade-up">
         <h1>Testes de desenpenhos <br> feitos na Coodesh.</h1>
         <div><img src="/img/grafico.png" alt="Grafico" width="60rem"></div>
+    </section>
+<!-- Botão de Scroll para o topo da pagina  -->
+    <section>
+        <button class="scrollTop" onclick="backTop();">
+            <img src="/img/seta.png" alt="">
+        </button>
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -233,14 +284,20 @@
        });
     </script>
 
-<a class="botao-subir" href="#container-1">SUBA</a>
+<script src="script.js"></script>
+
 </body>
 <!--Rodape da Pagina-->   
 <footer>
     <div class="div-footer">
-         <div><h2><strong>Desenvolvido por:</strong> Gabriel Oliveira </h2></div>
-        <div> <h2><strong>E-mail de Contato:</strong> gabrieloliveirasantos196@gmail.com </h2></div>
-         <div><h2><strong>Telefone:</strong> 351 915 714 405</h2></div>
+         <div class="desenvolvedor">
+            <div><h2><strong>Desenvolvido por: <br></strong> Gabriel Oliveira </h2></div>
+            <div><img src="/img/foto.png" alt="Foto Gabriel"></div>
+         </div>
+        <div>
+            <div><h2><strong>E-mail de Contato:</strong> gabrieloliveirasantos196@gmail.com </h2></div>
+            <div><h2><strong>Telefone:</strong> 351 915 714 405</h2></div>
+    </div>
     </div>
 </footer>
 
@@ -251,6 +308,8 @@
     duration: 3000,
    });
 </script>
+
+
 
 </html>
 
