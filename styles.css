@@ -464,6 +464,12 @@ footer h2 {
     color: white;
 }
 
+/*definindo a cor de fundo do texto*/
+.contato-desenvolvedor{
+    text-decoration: none;
+    color: white;
+}
+
 /* dando a responsividade ao mudar do mobile para o desktop  */
 .div-footer {
     flex-direction:row;
@@ -834,6 +840,8 @@ footer h2 {
     display: flex;
     align-items: center;
 }
+
+
 
 
 
