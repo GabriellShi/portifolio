@@ -5,84 +5,96 @@
     scroll-behavior: smooth;
 }
 
-/*Cor de fundo do Header, borda inferior branca e especificando a largura*/
-header {
-    background-color: rgb(0, 0, 0);
-    border-bottom: 1px solid white ;
+.wrapper {
     width: 100%;
+    margin: 0 auto;
 }
-
-/*Estilização de Espaçamento da barra de navegação*/
+  
 nav {
-    display: flex; 
-    justify-content:space-between;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-/*Largura do Logo*/
-.div-nav-esquerdo img {
-    width: 6rem;
-    padding: 15px;
-}
-
-/*Espaçamento entre topicos de navegação*/
-.div-nav-direito ul {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
+    background-color: hsl(0, 0%, 0%);
+  
 }
-
-/*Remoção dos indicadores não ordenado dos LI, espaçamento entre os mesmos e alteração do tamanho*/
-.div-nav-direito li {
-    list-style:none;
-    padding: 15px;
-    margin-top: 5px;
-    font-size: 20px;
-
+  
+nav img  {
+    width:6.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+  
+nav a {
     text-decoration: none;
+    color: #fff;
+}
+  
+  
+nav #toggle,
+nav label {
+    display: none;
+}
+  
+.menu li:hover {
+    color:  rgb(255, 72, 0);
 }
 
-/*Tirando o grifado dos links e mudando a cor*/
-.div-nav-direito a {
-    text-transform: none;
-    text-decoration: none;
-    color: white;
-    
+.linha {
+    border-bottom: 1px solid white;
 }
 
-/* dando cor ao topico do menu selecionado */
-.div-nav-direito a:hover{
-    color:blueviolet;
-}
-/*Removendo o Icone de navegação do enquadramento para Desktop*/
-.barra-de-navegacao{
-    display: none;   
-}
 
 /*Configurando tela para mobile, até 630px*/
 @media (max-width: 630px)
   {
 
-/*Colocando de volta o Icone de navegação no enquadramento Mobile*/
-    .barra-de-navegacao{
-        display:inherit; 
-        padding-top: 10px; 
-        padding-bottom: 10px; 
-    }
+nav .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+}
+  
+nav {
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+  
+nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+  
+nav label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+}
+  
+nav label img {
+    width: 3rem;
+}
+  
+nav img  {
+    margin-right: 0;
+}
+  
+nav #toggle:checked ~ .menu {
+    height: 100%;
+}
 
-/*Removendo os topicos de navegação do enquadramento para mobile*/
-    .div-nav-direito {
-        display: none;
-    }
-
-    .container-2-foto {
-        display: none;
-    }
-
-/* removendo o container 3 para desktop da area mobile  */
-    .container-3-desktop {
-        display: none;
-    }
+.container-2-foto {
+    display: none;
+}
   }
 /*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO HEADER-----------------------------------------*/
 
@@ -448,6 +460,8 @@ footer {
 /*dando tamanho a fonte e definindo a cor de fundo do texto*/
 footer h2 {
     font-size: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 /* dando a responsividade ao mudar do mobile para o desktop  */

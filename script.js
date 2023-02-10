@@ -72,7 +72,7 @@ function aparecer(){
      document.getElementById("a"+i).hidden=true; //Oculta as imagens
     }
     var obj3=event.target.dataset.nome; //Captura todo o elemento
-    document.getElementById(obj3).hidden=false; //Oculta o elemento
+    document.getElementById(obj3).style.display = "block"; //Oculta o elemento
 
    }
    

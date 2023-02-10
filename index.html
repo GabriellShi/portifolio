@@ -7,31 +7,37 @@
     <title>Gabriel Oliveira</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- Linkagem do javascript -->
     <script defer src="/script.js"></script>
+    
+<!-- Colocando Icone do logo nas abas do site  -->
+    <link rel="icon" type="image/png" href="img/logos-icon.png"/>
 </head>
+
+
 <!--Cabeçalho-->
 <header>
-<!--Navegação do portifolio-->
-    <nav>
-<!--Div contendo o Logo-->    
-        <div class="div-nav-esquerdo">
-            <a href="/"><img src="img/logo-gofs.png" alt="Logo"></a>
-        </div>
-<!--Div contendo os topicos da pagina-->
-        <div class="div-nav-direito">
-            <ul>
-                <a href="#container-2"><li>Sobre mim</li></a>
-                <a href="#container-3"><li>Habilidades</li></a>
-                <a href="#container-4"><li>Projetos</li></a>
-                <a href="#container-5"><li>Nivelamento</li></a>
-            </ul>
-        </div>
-<!--Icone de Navegação-->
-        <div class="barra-de-navegacao"><img src="img/barra-de-navegação.png" 
-             alt="Icone de Navegação" width="40px">
-        </div>
-    </nav>
-</header>
+    <!-- Menu de navegação -->
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-gofs.png" alt="Logo"></a>
+            </div>
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"> <img src="img/barra-de-navegação.png" alt="Barra de Navegação Mobile"></label>
+                <div class="menu" id="home">
+                    <ul>
+                        <a href="#container-2"><li>SOBRE MIM</li></a>
+                        <a href="#container-3"><li>HABILIDADES</li></a>
+                        <a href="#container-4"><li>PROJETOS</li></a>
+                        <a href="#footer"><li>CONTATO</li></a>
+                    </ul>
+                </div>
+        </nav>
+        <div class="linha"></div>
+    </div>
+    </header>
 
 <body>
 <!--Primeiro Container - minhas informações principais-->
@@ -288,7 +294,7 @@
 
 </body>
 <!--Rodape da Pagina-->   
-<footer>
+<footer id="footer">
     <div class="div-footer">
          <div class="desenvolvedor">
             <div><h2><strong>Desenvolvido por: <br></strong> Gabriel Oliveira </h2></div>
@@ -297,7 +303,7 @@
         <div>
             <div><h2><strong>E-mail de Contato:</strong> gabrieloliveirasantos196@gmail.com </h2></div>
             <div><h2><strong>Telefone:</strong> 351 915 714 405</h2></div>
-    </div>
+        </div>
     </div>
 </footer>
 
