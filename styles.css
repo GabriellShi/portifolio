@@ -117,7 +117,6 @@ body {
 /*Definindo a largura das imagens e dando espaçamento embaixo delas*/
 .div-container-1-secundario img {
     width: 8rem;
-    padding-bottom: 1rem;
     margin-top: 2rem;
 }
 
@@ -190,7 +189,7 @@ para o nome sumir antes de passar o ponteiro*/
 /*Dando cor aos textos que mudam, tirando o indicadores dos textos, alterando o tamanho da fonte e dando
 a animação de ficar trocando de texto*/
 .dinamico li {
-    color:blueviolet;
+    color:#7a0a91;
     list-style: none;
     font-size: 2em;
     font-weight: 500;
@@ -211,6 +210,18 @@ a animação de ficar trocando de texto*/
 .dinamico li span {
     position: relative;
     font-size: 1.5rem;
+}
+
+/* Definindo cor de fundo que o botão ira ter ao passar o mouse  */
+.div-container-1-secundario-linkedin:hover img {
+    background-color: #00E6FF;
+    border-radius: 5px;
+}
+
+/* Definindo cor de fundo que o botão ira ter ao passar o mouse  */
+.div-container-1-secundario-github:hover img {
+    background-color: #7a0a91;
+    border-radius: 5px;
 }
 
 
@@ -276,7 +287,28 @@ a animação de ficar trocando de texto*/
     color: #00E6FF;
 }
 
+/* Configurando a movimentação dos botões de habilidades  */
+@keyframes movimento {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+/* Definindo o tempo de movimento dos botões  */
+.logo-habilidade img:hover {
+    animation: movimento 1s;
+}
 
 /*----------------------Daqui Para baixo fica a estilização do CONTAINER 4 GERAL-------------------------------*/
 
@@ -511,10 +543,33 @@ footer h2 {
 /*--------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------*/
 
-  
+
 
 /*---------------------------------------------------------------------------------------------------*
-                 /*DAQUI PARA BAIXO FICA A ESTILIZAÇÃO MOBILE PARA TUDO ABAIXO DE 630PX*/
+                        /*DAQUI PARA BAIXO FICA A ESTILIZAÇÃO MOBILE/
+
+                        
+/*---------------------------------------------------------------------------------------------------*/
+/*------------------Daqui Para baixo fica duas configurações do nav de responsividade----------------*/
+
+/* Retirando o espaçamento dos topicos do menu de navegação  */
+@media (max-width: 1001px){
+    nav ul { 
+        gap: 1rem;
+    }
+}
+
+/* Diminuindo o tamanho e dando uma margin inferior nos itens do menu de navegação  */
+@media (max-width: 905px){
+    .menu li {
+        font-size: 0.7rem;
+        margin-bottom: 2px;
+    }
+}
+
+
+
+/*------------------DAQUI PARA BAIXO COMEÇA A ESTILIZAÇÃO MOBILE DE 630PX PARA BAIXO--------------------------*/
 
 @media (max-width: 630px)
 {
@@ -526,6 +581,12 @@ nav .menu {
       width: 100%;
       height: 0;
       overflow: hidden;
+}
+
+.menu li {
+    border: 0;
+    border-radius: 0;
+    font-size: 1rem;
 }
 
 /* Dando margem e espaçamento ao menu de navegação */
@@ -712,10 +773,25 @@ nav {
 /* definindo a largura e as pargem do imagem do lado direita do container 1  */
 .container-1-lado-direito img {
     width: 35rem;
-    padding-left: 5rem;
+    margin-left: 8rem;
     padding-top: 3rem;
 }
 
+/* Fazendo com que o conteudo da div não vaze  */
+.container-1-lado-direito {
+    overflow: hidden;
+}
+
+/* Dando um animação para a imagem que ira ser animado com 3 segundo ao passar o mouse  */
+.container-1-lado-direito img {
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+/* Girando a imagem ao passar o mouse sobre ela  */
+.container-1-lado-direito:hover img {
+    transform: scale(1.3) rotate(90deg);
+}
 
 
 /*------------------Daqui Para baixo fica a estilização do CONTAINER 2 DESKTOP--------------------------*/
