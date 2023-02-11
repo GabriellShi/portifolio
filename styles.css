@@ -1,3 +1,6 @@
+/*---------------------------------------------------------------------------------------------------------------------*
+                                /*DAQUI PARA BAIXO FICA A ESTILIZAÇÃO DO CSS GERAL*/
+
 /*Definindo fonte padrão dos textos do site e zerando margem*/
 *{
     margin: 0;
@@ -5,106 +8,81 @@
     scroll-behavior: smooth;
 }
 
+/*---------------------------Daqui Para baixo fica a estilização do HEADER----------------------------------*/
+
+/* Defininfo a largura e retirando as margem do header  */
 .wrapper {
     width: 100%;
     margin: 0 auto;
 }
-  
+
+/* Definindo cor, dando esaçamento e centralizando os itens dentro da tag nav (menu-navegador)  */
 nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     background-color: hsl(0, 0%, 0%);
-  
 }
-  
+
+/* Definindo a largura e dando margem a imagem que fai no menu de navegação  */
 nav img  {
     width:6.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-  
+
+/* Deixando os item no menu de navegação um ao lado do outro, dando espaçamento com gap e tirando os topicos das listas  */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
   
+/* tirando o sublinhado dos links do menu de navegação  */
 nav a {
     text-decoration: none;
-    color: #fff;
 }
-  
-  
+
 nav #toggle,
 nav label {
     display: none;
 }
-  
-.menu li:hover {
-    color:  rgb(255, 72, 0);
+
+/* Defindo tamanho, margin interna e cores do texto e da borda dos itens do menu de navegação  */
+.menu li {
+    font-size: 1.2rem;
+    border: 1px solid #00E6FF;
+    background-color: transparent;
+    border-radius: 1px 10px;
+    color: #00E6FF;
+    padding: 0.5rem;
 }
 
+/* definindo a cores que os itens do menu terão ao passar o mouse neles */
+.menu li:hover {
+    background-color: #00E6FF;
+    color: white;
+}
+
+/* Deixando uma linha branca entre o header e o container 1  */
 .linha {
     border-bottom: 1px solid white;
 }
 
 
-/*Configurando tela para mobile, até 630px*/
-@media (max-width: 630px)
-  {
 
-nav .menu {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-}
-  
-nav {
-    justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    
-}
-  
-nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-}
-  
-nav label {
-    display: inline-flex;
-    color: white;
-    cursor: pointer;
-}
-  
-nav label img {
-    width: 3rem;
-}
-  
-nav img  {
-    margin-right: 0;
-}
-  
-nav #toggle:checked ~ .menu {
-    height: 100%;
-}
+/*---------------------------Daqui Para baixo fica a estilização do BODY GERAL----------------------------------*/
 
-.container-2-foto {
-    display: none;
-}
-  }
-/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO HEADER-----------------------------------------*/
-
-
-
-/*Defindo cor da letra e do fundo do corpo do site*/
+/*Defindo cor da letra e do fundo do corpo do site pelo corpo (body)*/
 body {
     background-color: rgb(0, 0, 0);
     color: white;
 }
+
+
+
+/*---------------------------Daqui Para baixo fica a estilização do CONTAINER 1 GERAL----------------------------------*/
 
 /*dando margem ao primeiro container*/
 .container-1 {
@@ -190,9 +168,6 @@ para o nome sumir antes de passar o ponteiro*/
     }
 }
 
-
-/* ---------------------------------- */
-
 /*Fazendo textos que trocam ficar na mesma posição que o texto desenvolvedor*/
 .container-desenvolvedor{
     display: inline-flex;
@@ -209,8 +184,7 @@ para o nome sumir antes de passar o ponteiro*/
     padding-left: 15px;
     line-height: 90px;
     height: 90px;
-    overflow: hidden;
-     
+    overflow: hidden;   
 }
 
 /*Dando cor aos textos que mudam, tirando o indicadores dos textos, alterando o tamanho da fonte e dando
@@ -233,24 +207,20 @@ a animação de ficar trocando de texto*/
     }
 }
 
+/* definindo o tamanho e posição dos texto que mudam do container 1  */
 .dinamico li span {
     position: relative;
     font-size: 1.5rem;
 }
 
-/* retirando a imagem do container 1 para versão mobile  */
-.container-1-lado-esquerdo {
-    display: none;
-}
-/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 1-----------------------------------------*/
 
 
-
+/*---------------------Daqui Para baixo fica a estilização do CONTAINER 2 GERAL--------------------------------*/
 
 /*colocando cor no container 2 e dando espaçamento inferior*/
 .container-2 {
     background-color: rgb(20, 19, 19);
-    padding-bottom: 10rem;
+    padding-bottom: 10rem;  
 }
 
 /*Centralizando o titulo do container 2 e dando espaçamento em baixo*/
@@ -267,10 +237,10 @@ a animação de ficar trocando de texto*/
     padding-bottom: 5rem;
     text-align: justify;
 }
-/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 2-----------------------------------------*/
 
 
 
+/*----------------------Daqui Para baixo fica a estilização do CONTAINER 3 GERAL-------------------------------*/
 
 /*Dando espaçamento na parte de cima do container 3*/
 .container-3 {
@@ -294,6 +264,7 @@ a animação de ficar trocando de texto*/
     width: 5rem;
 }
 
+/* deixando o cursor do mouse com forma de clicagem ao passar o mouse  */
 .icones-habilidades img {
     cursor: pointer;
 }
@@ -304,9 +275,12 @@ a animação de ficar trocando de texto*/
     justify-content: center;
     color: #00E6FF;
 }
-/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 3-----------------------------------------*/
 
 
+
+/*----------------------Daqui Para baixo fica a estilização do CONTAINER 4 GERAL-------------------------------*/
+
+/* Definifno a largura, altura, responsividade e cor do container 4  */
 .container-4 {
     width: 100%;
     height: auto;
@@ -315,26 +289,30 @@ a animação de ficar trocando de texto*/
     flex-flow: wrap;
 }
 
+/* Centralizando o titulo do container 4 e dando margem inferior e superior  */
 .container-4 h1 {
     text-align: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
+/* definindo o tamanho das imagens do container 4  */
 .img-imagemcenter img {
     width: 18rem;
 }
 
+/* dando margem inferior a div imagemcenter  */
 .img-imagemcenter  {
     display: flex;
     margin-bottom: 5rem;
 }
 
+/* definindo cor a pelicula que vai em cima da imagem da div imagemcenter ao passar o cursor  */
 .projeto-div:hover {
     background-color: #0000009d;
-    
 }
 
+/* definindo a largura, altura e deixando transparente a pelicula que vai em cima da imagem da div imagemcenter  */
 .projeto-div {
     background-color:transparent;
     width: 18rem;
@@ -342,22 +320,25 @@ a animação de ficar trocando de texto*/
     position: absolute;
 }
 
+/* dando margem a div projetos  */
 .projetos {
     margin: 1rem;
 }
 
+/* Deixando centraliznado e um ao lado do outro os icones dentro da div projeto-div  */
 .projeto-div {
     display: flex;
     justify-content: center;
     align-items: end;
 }
 
+/* Definindo as cores, largura, altura, espaçamento e centralização dos icones que estão dentro da div imagecenter  */
 .projeto-div-menor {
     width: 3.5rem;
     padding: 0.3rem;
     padding-bottom: 0.5rem;
     height:0.8rem;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(0, 0, 0);
     color: white;
     border: 1px solid black;
     text-align: center;
@@ -365,16 +346,13 @@ a animação de ficar trocando de texto*/
     margin: 0.2rem;
     border-radius: 5px;
     margin-bottom: 0.5rem;
-    
 }
 
+/* Dando espaçamento, centralizando, definindo cor e tamanho da fonte o titulo que vai dentro de div imagemcenter  */
 .projetos-h3 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-.projetos-h3 {
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1.3rem;
@@ -400,34 +378,38 @@ a animação de ficar trocando de texto*/
     text-decoration: none;
 }
 
-/* Colocando um dos botões transparente  */
-.projeto-div-menor-2 {
-    display:none;
+/* Definindo as cores dos botão que vão dentro da div imagemcenter  */
+.menor3 {
+    border: 1px solid #00E6FF;
     background-color: transparent;
-    border: 0;
+    border-radius: 1px 10px;
+    color: #00E6FF;
 }
 
+/* Definindo as cores que o botão tera ao passar o mouse dentro da div imagemcenter  */
+.menor3:hover {
+    background-color: #00E6FF;
+    color: white;
+}
+
+/* Centraliznado e deixando um ao lado do outro os icones que tem dentro da div imagemcenter  */
 .projeto-div-a1 div {
     display: flex;
     justify-content: center;
-    
 }
 
+/* Deixando o container 4 pai responsivo e centralizado  */
 .container-4-pai {
     display: flex;
     justify-content: center;
     flex-direction:row;
     flex-flow: wrap;
-
 }
 
 
 
 
-/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 4-----------------------------------------*/
-
-
-
+/*----------------------Daqui Para baixo fica a estilização do CONTAINER 5 GERAL-------------------------------*/
 
 /*Centraliznado e dando margem no titulo do container 5*/
 .container-5 h1 {
@@ -446,14 +428,14 @@ a animação de ficar trocando de texto*/
 .container-5 div {
     text-align: center;
 }
-/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO CONTAINER 5-----------------------------------------*/
 
 
 
+/*----------------------Daqui Para baixo fica a estilização do FOOTER GERAL-------------------------------*/
 
 /*Defindo a cor de fundo do footer*/
 footer {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(20, 19, 19);
     border-top: 1px solid white;
 }
 
@@ -478,7 +460,7 @@ footer h2 {
 
 
 
-/*TODOS OS CODIGOS ACIMA FORAM A ESTILIZAÇÃO DO FOOTER MOBILE-----------------------------------------*/
+/*------------------Daqui Para baixo fica a estilização do SCROLL DE ROLAGEM GERAL--------------------------*/
 
 /* Estilizando o Botão de Scroll para o topo da pagina  */
 .scrollTop {
@@ -500,230 +482,384 @@ footer h2 {
     opacity: 0;
     visibility: hidden;
     transition: all .4s ease;
-  }
+}
   
-  /* Estilizando quano ele ira aparacer  */
-  .scrollTop.active {
+/* Estilizando quano ele ira aparacer  */
+.scrollTop.active {
     opacity: 1;
     visibility: visible;
-  }
+}
   
-  /* Estilizando a largura da imagem e fazendo a rotação dela  */
-  .scrollTop img {
+/* Estilizando a largura da imagem e fazendo a rotação dela  */
+.scrollTop img {
     width: 50%;
     transform: rotate(-90deg);
-  }
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
   
 
+/*---------------------------------------------------------------------------------------------------*
+                 /*DAQUI PARA BAIXO FICA A ESTILIZAÇÃO MOBILE PARA TUDO ABAIXO DE 630PX*/
+
+@media (max-width: 630px)
+{
+
+/*------------------Daqui Para baixo fica a estilização do HEADER MOBILE--------------------------*/
+
+/* Definindo a largura, altura e deixando os itens na mesma linha do menu de navegação  */
+nav .menu {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+}
+
+/* Dando margem e espaçamento ao menu de navegação */
+nav {
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Deixando os itens do menu de navegação um em cima do outro, centralizando e dando margem interna  */
+nav ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+/* Dando cor e deixando o cursor com um formato que clicagem  */
+nav label {
+  display: inline-flex;
+  color: white;
+  cursor: pointer;
+}
+
+/* Definindo a largura da imagem do logo do menu de navegação  */
+nav label img {
+  width: 3rem;
+}
+
+/* zerando a margem da imagem do menu de navegação  */
+nav img  {
+  margin-right: 0;
+}
+
+/* Deixando a altura do menu de navegação em 100%  */
+nav #toggle:checked ~ .menu {
+  height: 100%;
+}
 
 
 
+/*------------------Daqui Para baixo fica a estilização do CONTAINER 1 MOBILE--------------------------*/
+
+/* retirando a imagem do container 1 para versão mobile  */
+.container-1-lado-direito {
+    display: none;
+  }
 
 
 
+/*------------------Daqui Para baixo fica a estilização do CONTAINER 2 MOBILE--------------------------*/
+
+/* Retirando a imagem do container 2 que fica a esquerda  */
+.container-2-foto {
+  display: none;
+}
+
+/*------------------Daqui Para baixo fica a estilização do CONTAINER 3 MOBILE--------------------------*/
+
+/* Retirando o container 3 desktop do mobile  */
+.container-3-desktop{
+  display: none;
+}
+
+/* Definindo o tamanho dos titulos h2 do container 3 mobile  */
+.container-3 h2 {
+  font-size: 1rem;
+}
+
+/* Deixando os itens da descrição de habilidades um em baixo do outro e centralizando  */
+.descricao-icones-hab2 {
+    display: grid;
+    justify-content: center;
+}
+
+/* Definindo o tamanho da largura, a posição  na vertical e horizontal da primeira descrição  */
+.descricao1-2  {
+    width:150%;
+    position: relative;
+    right: 5.5rem;
+    font-size: 1.2rem;
+    bottom: 1.5rem;
+}
+
+/* Definindo o tamanho da largura, a posição  na vertical e horizontal da segunda descrição  */
+.descricao2-2 {
+    width:150%;
+    position: relative;
+    right: 5.5rem;
+    font-size: 1.2rem;
+    bottom: 1.5rem;
+}
+
+/* Definindo o tamanho e a cor do titulo das descrições  */
+.desc-1-2-titulo {
+    font-size: 1.6rem;
+    color: #00E6FF;
+}
+
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
 
 
 
 /*---------------------------------------------------------------------------------------------------*
-                 /*Daqui para baixo fica as Estilizações para versão Desktop*/
-
-
+                 /*DAQUI PARA BAIXO FICA A ESTILIZAÇÃO DESKTOP PARA TUDO ACIMA DE 630PX*/
 
 @media (min-width: 630px)
- {
+{
+
+/*------------------Daqui Para baixo fica a estilização do HEADER DESKTOP--------------------------*/
 /*Dando tamanho padrão a todas as tags de h1 de titulos*/
-    * h1{
-        font-size: 28px;
-    }
+* h1{
+    font-size: 28px;
+}
 
 /*Dando espaçamento lateral no header*/
-    nav {
-        padding-left: 2rem;
-        padding-right: 6rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
-    }
+nav {
+    padding-left: 2rem;
+    padding-right: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
 
+
+
+/*------------------Daqui Para baixo fica a estilização do CONTAINER 1 DESKTOP--------------------------*/
 
 /* Deixando as duas maiores divs do container 1 na mesma linha */
-    .container-1 {
-        display: flex;
-    }     
+.container-1 {
+    display: flex;
+}     
 
 /*Dando um maior espaçamento entre a parte principal e secundario do container 1*/
-    .div-container-1-principal {
-        padding-left: 2rem;
-        padding-top: 1rem;
-        margin-top: 7rem;
-        margin-left: 5rem
-    }
+.div-container-1-principal {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    margin-top: 7rem;
+    margin-left: 5rem
+}
 
 /*Dando tamanho personalizado a div desenvolvedor*/
-    .desenvolvedor-estatico {
-        font-size: 1.8em;
-    }
+.desenvolvedor-estatico {
+    font-size: 1.8em;
+}
 
 /*Dando tamanho para o titulo de nome Gabriel*/
-    .gabriel {
-        font-size: 3rem;
-    }
+.gabriel {
+    font-size: 3rem;
+}
 
 /*Dando um maior espaçamento entre a parte principal e secundario do container 1*/
-    .div-container-1-secundario  {
-        margin-left: -2rem;
-        margin-bottom: 14rem;
-        margin-top: 0rem; 
-    }
+.div-container-1-secundario  {
+    margin-left: -2rem;
+    margin-bottom: 14rem;
+    margin-top: 0rem; 
+}
 
 /*Deixando as div do container 1 secundario uma do lado da outra com espaçamento*/
-    .div-container-1-secundario div {
-        display: inline;
-        padding: 2rem;
-        text-align: start;   
-    }
+.div-container-1-secundario div {
+    display: inline;
+    padding: 2rem;
+    text-align: start;   
+}
 
 /*alterando o tamanho para os links do perfil proficional ficar mais alto*/
-    .div-container-1-secundario img {
-        width: 10rem;
-    }
+.div-container-1-secundario img {
+    width: 10rem;
+}
 
-    .container-1-lado-esquerdo img {
-        width: 35rem;
-        padding-left: 5rem;
-        padding-top: 3rem;
-    }
-/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 1 PARA DESKTOP--------------------------------------------*/
+/* definindo a largura e as pargem do imagem do lado direita do container 1  */
+.container-1-lado-direito img {
+    width: 35rem;
+    padding-left: 5rem;
+    padding-top: 3rem;
+}
 
 
+
+/*------------------Daqui Para baixo fica a estilização do CONTAINER 2 DESKTOP--------------------------*/
 
 /*Dando espaçamento inferior no container 2*/
-    .container-2 h1 {
-        text-align: center;
-        margin-bottom: 5rem;
-        padding-top: 2rem;
-    }
+.container-2 h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+}
 
 /* centralizando o texto do container 2 e alguns espaçamentos */
-    .container-2  {
-        text-align: center;
-        padding: 1.5rem;
-        padding-bottom: 5rem;
-        padding-top: 4rem;
-    }
+.container-2  {
+    text-align: center;
+    padding-bottom: 5rem;
+    padding-top: 4rem;     
+}
 
 /* Definindo a largura da div do container 2 */
-    .container-2 div {
-        width: 100%;
-        display: inline-flex;
-    }
+.container-2 div {
+    width: 85%;
+    display: inline-flex;
+}
 
 /*alterando o tamanho do paragrafo do container 2 - sobre mim*/
-    .container-2 p {
-        font-size: 19px;
-        padding: 0;
-        margin-right: 1rem;
-        font-family:Arial, Helvetica, sans-serif;
-    }
+.container-2 p {
+    font-size: 19px;
+    padding: 0;
+    margin-right: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
 /* Definindo a altura da imagem do container 2, centralizando o o texto e dando espaçamento  */
-    .container-2-foto {
-        height: 30rem;
-        margin-left: 1rem;
-        width: 80%;
-        text-align: center;
-        justify-content: center;
-    }
-/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 2 PARA DESKTOP--------------------------------------------*/
+.container-2-foto {
+    height: 30rem;
+    margin-left: 1rem;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+}
 
 
 
+/*------------------Daqui Para baixo fica a estilização do CONTAINER 3 DESKTOP--------------------------*/
 
 /*Centralizando os itens do container 3 e dando espaçamento inferior*/
-    .container-3  {
+.container-3  {
     text-align: center;
     padding-bottom: 20rem;
     padding-top: 8rem;
-
-    }
+}
 
 /* Dando espaçamento inferior na div do container 3 */
-    .container-3 div  {
-        padding-bottom: 1rem;
-    }
+.container-3 div  {
+    padding-bottom: 1rem;
+}
 
 /*Deixando as divs do container 3 alinhados na mesma linha*/
-    .logo-habilidade {
-        display: inline;
-        padding: 0;
-    }
+.logo-habilidade {
+    display: inline;
+    padding: 0;
+}
 
 /*Dando espaçamento do titulo do container 3*/
-    .container-3 h1 {
-        padding-bottom: 3rem;
-    }
+.container-3 h1 {
+    padding-bottom: 3rem;
+}
 
 /* Colocando uma linha no container 3 para separar os icones do texto, dando largura no container e centralizando os itens */
-    .div-container-3 {
-        border-bottom: 1px solid  #00E6FF;;
-        width: 85%;
-        display: inline-block;
-        justify-content: center;
-    }
+.div-container-3 {
+    border-bottom: 1px solid  #00E6FF;;
+    width: 85%;
+    display: inline-block;
+    justify-content: center;
+}
 
 /* removendo o container 3 para mobile da area desktop  */
 .container-3-Mobile {
     display: none;
 }
 
+ /* Deixando as div de descrição dos icones das habilidade uma do lado da outra, centralizando e definindo o tamanho da fonte  */
+ .descricao-icones-hab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
 
-/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 3 PARA DESKTOP--------------------------------------------*/
+/* Definindo a largura da div do lado esquerdo da descrição das habilidades  */
+.descricao1 {
+    width: 30%;
+}
+
+/* Definindo a largura da div do lado direito da descrição das habilidades  */
+.descricao2 {
+    width: 30%;
+}
+
+/* Definindo o tamanho e a cor da fonte do titulo da descrição do lado esquerdo  */
+.desc-1-titulo {
+    font-size: 1.6rem;
+    color: #00E6FF;
+}
+
+/* Tirando a margem interior das crescrições de habilidades  */
+#b1, #b2, #b3, #b4, #b5, #b6, #b7 {
+    padding: 0;
+}
 
 
+
+/*------------------Daqui Para baixo fica a estilização do CONTAINER 4 DESKTOP--------------------------*/
+
+/* Definindo a largura, altura e a cor de fundo do container 4  */
 .container-4 {
     width: 100%;
-    height: 35rem;
+    height: 45rem;
     background-color: rgb(20, 19, 19);
 }
 
+/* Centralizando os titulos h1 do container 4 e dando margem interna superior e inferior  */
 .container-4 h1 {
     text-align: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
+/* defindo a largura da imagem da div imagemcenter  */
 .img-imagemcenter img {
     width: 18rem;
 }
 
+/* Dando display flex a div imagemcenter img  */
 .img-imagemcenter  {
     display: flex;
 }
 
+/* Dafindo a cor que a pelica por cima da div imagem center tera ao passar o mouse  */
 .projeto-div:hover {
     background-color: #0000009d;
-    
 }
 
+/* Definindo a largura, altura, posição e deixando a cor transparente da pelicula que vai em cima da div imagemcenter  */
 .projeto-div {
     background-color:transparent;
     width: 18rem;
@@ -731,51 +867,63 @@ footer h2 {
     position: absolute;
 }
 
+/* Defindino a margem que os proejtos terão  */
 .projetos {
     margin: 1rem;
 }
 
+/* Deixando as divs dos projetos uma ao lado da outra e centralizando  */
 .projeto-div {
     display: flex;
     justify-content: center;
     align-items: end;
-    
 }
 
+/* Definindo as cores, largura, altura, espaçamento e centralização dos icones que estão dentro da div imagecenter  */
 .projeto-div-menor {
     width: 3.5rem;
     padding: 0.3rem;
     padding-bottom: 0.5rem;
     height:0.8rem;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(0, 0, 0);
     color: white;
     border: 1px solid black;
     text-align: center;
     justify-content: center;
     margin: 0.2rem;
     border-radius: 5px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
 }
 
+/* Definindo o aredondamento das bordas dos botões da div imagemcenter */
+.menor3 {
+    border-radius: 1px 10px ;
+}
+
+/* Dando espaçamento, centralizando, definindo cor e tamanho da fonte o titulo que vai dentro de div imagemcenter  */
 .projetos-h3 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-.projetos-h3 {
-    color: rgb(255, 255, 255);
+    color:#ffffff;
     font-weight: bold;
     font-size: 1.3rem;
 }
 
 /* definindo as cores e deixando a fonte mais larga dos botões de preview e codigo  */
 .menor3 {
-    background-color: #00E6FF;
-    color: black;
+    border: 1px solid #00E6FF;
+    background-color: transparent;
+    color:#00E6FF;
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* Definindo as cores que o botão tera ao passar o mouse dentro da div imagemcenter  */
+.menor3:hover {
+    background-color: #00E6FF;
+    color: white;
 }
 
 /* dando largura a div de habilidade javascript  */
@@ -789,23 +937,22 @@ footer h2 {
     text-decoration: none;
 }
 
-/* Colocando um dos botões transparente  */
-.projeto-div-menor-2 {
-    display:none;
-    background-color: transparent;
-    border: 0;
-}
-
+/* Centraliznado e deixando um ao lado do outro os icones que tem dentro da div imagemcenter  */
 .projeto-div-a1 div {
     display: flex;
     justify-content: center;
 }
 
+/* Deixando o container 4 pai responsivo e centralizado  */
 .container-4-pai {
     display: flex;
     justify-content: center;
-
 }
+
+
+
+/*------------------Daqui Para baixo fica a estilização do CONTAINER 5 DESKTOP--------------------------*/
+
 /*Dando espaçamento inferior no container 5*/
     .container-5 {
         padding-bottom: 19rem;
@@ -813,9 +960,9 @@ footer h2 {
     }
  }
 
-    
-/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO CONTAINER 4 PARA DESKTOP--------------------------------------------*/
 
+
+/*------------------Daqui Para baixo fica a estilização do FOOTER DESKTOP--------------------------*/
 
 /* Centralizando as div do footer  */
 .div-footer {
@@ -840,9 +987,3 @@ footer h2 {
     display: flex;
     align-items: center;
 }
-
-
-
-
-
-/*DAQUI PARA CIMA FICA A ESTILIZAÇÃO DO FOOTER PARA DESKTOP--------------------------------------------*/
