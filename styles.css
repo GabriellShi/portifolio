@@ -440,29 +440,6 @@ a animação de ficar trocando de texto*/
 
 
 
-
-/*----------------------Daqui Para baixo fica a estilização do CONTAINER 5 GERAL-------------------------------*/
-
-/*Centraliznado e dando margem no titulo do container 5*/
-.container-5 h1 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-/*redefinindo a largura da imagem e dando espaçamento na margin de baixo*/
-.container-5 img {
-    width: 20rem;
-    margin-bottom: 2rem;
-}
-
-/*centralizando a imagem*/
-.container-5 div {
-    text-align: center;
-}
-
-
-
 /*----------------------Daqui Para baixo fica a estilização do FOOTER GERAL-------------------------------*/
 
 /*Defindo a cor de fundo do footer*/
@@ -1025,15 +1002,6 @@ nav {
     justify-content: center;
 }
 
-
-
-/*------------------Daqui Para baixo fica a estilização do CONTAINER 5 DESKTOP--------------------------*/
-
-/*Dando espaçamento inferior no container 5*/
-    .container-5 {
-        padding-bottom: 19rem;
-        padding-top: 6rem;
-    }
  }
 
 
