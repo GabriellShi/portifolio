@@ -976,6 +976,12 @@ nav {
     font-size: 1.3rem;
 }
 
+.projetos-h3-modelo{
+    color: white;
+    background-color: rgb(238, 12, 5);
+    border-radius: 5px;
+    padding: 5px;
+}
 /* definindo as cores e deixando a fonte mais larga dos botões de preview e codigo  */
 .menor3 {
     border: 1px solid #00E6FF;
