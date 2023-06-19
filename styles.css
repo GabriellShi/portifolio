@@ -112,6 +112,7 @@ body {
 .div-container-1-secundario {
     margin-top: 3rem;
     margin-bottom: 9rem;
+    display: flex;
 }
 
 /*Definindo a largura das imagens e dando espaçamento embaixo delas*/
@@ -664,7 +665,19 @@ nav #toggle:checked ~ .menu {
 
 }
 
+/*------------------DAQUI PARA BAIXO COMEÇA A ESTILIZAÇÃO MOBILE DE 430PX PARA BAIXO--------------------------*/
 
+@media (max-width: 430px){
+    .container-desenvolvedor  {
+        display: grid;
+        justify-content: start;
+        text-align: center;
+        padding-left: 2rem;
+    }
+    .container-desenvolvedor div {
+        padding-left: 1rem;
+    }
+}
 
 /*--------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------*/
